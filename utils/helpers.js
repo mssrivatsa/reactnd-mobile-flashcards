@@ -28,7 +28,7 @@ function createNotification() {
 
 function getReminderDateTime() {
   const reminderDateTime = new Date();
-  reminderDateTime.setDate(reminderDateTime.getDate());
+  reminderDateTime.setDate(reminderDateTime.getDate() + 1);
   reminderDateTime.setHours(17);
   reminderDateTime.setMinutes(0);
   return reminderDateTime;
